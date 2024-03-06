@@ -1,0 +1,25 @@
+// Function to get a random value from an array
+function getRandomValue(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+// Array of possible options for the fortune wheel
+const fortuneWheelOptions = [
+    "Great success!",
+    "Very lucky",
+    "Lucky",
+    "Usually",
+    "Nothing special",
+    "Not very lucky",
+    "Unsuccessful",
+    "Disaster"
+];
+
+// Function to randomly select a value and output the result
+function spinWheel() {
+    const result = getRandomValue(fortuneWheelOptions);
+    console.log("Your result: " + result);
+}
+
+// Example call of the function to spin the wheel
+spinWheel();
